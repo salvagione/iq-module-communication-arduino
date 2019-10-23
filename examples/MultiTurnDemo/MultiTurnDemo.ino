@@ -17,7 +17,7 @@
  *  This example code is in the public domain.
  */
 
-#include <iq_module_communicaiton.hpp>
+#include <iq_module_communication.hpp>
 
  // USER SETABLE VALUES HERE---------------------------------------------------
 // Sets the angle to go to in radians
@@ -26,8 +26,8 @@ const float kAngle = 12.0f*PI;
 const float kTime = 5;
 // END USER SETABLE VALUES-----------------------------------------------------
 
-// Make an IqSerial object using Serial0 (same as Serial)
-IqSerial ser(Serial);
+// Make an IqSerial object using Serial1
+IqSerial ser(Serial1);
 // Make a MultiTurnAngleControlClient to interface with a motor module (ID 0)
 MultiTurnAngleControlClient angle(0);
 
